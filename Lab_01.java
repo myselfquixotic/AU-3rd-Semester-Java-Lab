@@ -5,7 +5,7 @@ class BankAccount{
     String accountType;
     double accountBalance;
     
-    BankAccount(String name, long accNo, String type, double balance){
+    public BankAccount(String name, long accNo, String type, double balance){
         accountHolderName=name;
         accountNumber=accNo;
         accountType=type;
