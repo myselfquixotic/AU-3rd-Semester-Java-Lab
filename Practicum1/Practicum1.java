@@ -1,16 +1,15 @@
+package Practicum1;
 class BankAccount{
     String accountHolderName;
     long accountNumber;
     String accountType;
     double accountBalance;
-
     BankAccount(String name,long accNo,String type,double balance){
         accountHolderName=name;
         accountNumber=accNo;
         accountType=type;
         accountBalance=balance;
     }
-
     void deposit(double amount){
         if (amount>0){
             accountBalance+=amount;
@@ -19,7 +18,6 @@ class BankAccount{
             System.out.println("Invalid Deposit Amount");
         }
     }
-
     void withdraw(double amount){
         if (amount<=0){
             System.out.println("Invalid Withdrawal Amount");
@@ -30,7 +28,6 @@ class BankAccount{
             System.out.println("Withdrawn Amount: "+amount);
         }
     }
-
     void balanceEnquiry(){
         System.out.println("Account Holder Name: "+accountHolderName);
         System.out.println("Account Number: "+accountNumber);
@@ -38,7 +35,7 @@ class BankAccount{
         System.out.println("Account Balance: "+accountBalance);
     }
 }
-public class Lab_01{
+public class Practicum1{
     public static void main(String[] args){
         BankAccount account1=new BankAccount("Ravi", 1001, "Savings", 10000);
 
